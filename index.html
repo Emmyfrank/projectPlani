@@ -1,330 +1,605 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Carpooling Platform Proposal</title>
-     <link rel="stylesheet" href="styles.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
- </head>
- <body>
-     <header>
-         <div class="container">
-             <div class="logo">
-                 <h1>RideShare<span>Connect</span></h1>
-             </div>
-             <nav>
-                 <ul>
-                     <li><a href="#overview">Overview</a></li>
-                     <li><a href="#technologies">Technologies</a></li>
-                     <li><a href="#pricing">Pricing</a></li>
-                     <li><a href="#timeline">Timeline</a></li>
-                 </ul>
-             </nav>
-         </div>
-     </header>
- 
-     <section class="hero">
-         <div class="container">
-             <div class="hero-content">
-                 <h1>Carpooling Platform Proposal</h1>
-                 <p>A comprehensive solution for connecting drivers and passengers across Canada</p>
-                 <a href="#pricing" class="btn">View Pricing</a>
-             </div>
-         </div>
-     </section>
- 
-     <section id="overview" class="overview">
-         <div class="container">
-             <h2>Project Overview</h2>
-             <div class="overview-grid">
-                 <div class="overview-card">
-                     <div class="icon">📱</div>
-                     <h3>Mobile Apps</h3>
-                     <p>Native iOS and Android applications with real-time ride tracking and notifications</p>
-                 </div>
-                 <div class="overview-card">
-                     <div class="icon">🖥️</div>
-                     <h3>Web Platform</h3>
-                     <p>Responsive web application with full functionality for both drivers and passengers</p>
-                 </div>
-                 <div class="overview-card">
-                     <div class="icon">🔐</div>
-                     <h3>Admin Dashboard</h3>
-                     <p>Comprehensive management interface with analytics and user management</p>
-                 </div>
-                 <div class="overview-card">
-                     <div class="icon">💬</div>
-                     <h3>Real-time Chat</h3>
-                     <p>Instant messaging between drivers and passengers with notifications</p>
-                 </div>
-             </div>
-         </div>
-     </section>
- 
-     <section id="technologies" class="technologies">
-         <div class="container">
-             <h2>Technology Stack</h2>
-             <div class="tech-grid">
-                 <div class="tech-category">
-                     <h3>Backend</h3>
-                     <ul>
-                         <li>Node.js with Express</li>
-                         <li>TypeScript</li>
-                         <li>PostgreSQL Database</li>
-                         <li>Redis for Caching</li>
-                         <li>Socket.io for Real-time</li>
-                         <li>JWT Authentication</li>
-                     </ul>
-                 </div>
-                 <div class="tech-category">
-                     <h3>Frontend (Web)</h3>
-                     <ul>
-                         <li>React with Vite</li>
-                         <li>TypeScript</li>
-                         <li>Modern CSS</li>
-                         <li>Responsive Design</li>
-                         <li>Mapbox Integration</li>
-                         <li>i18n (English/French)</li>
-                     </ul>
-                 </div>
-                 <div class="tech-category">
-                     <h3>Mobile</h3>
-                     <ul>
-                         <li>React Native</li>
-                         <li>Native iOS Components</li>
-                         <li>Native Android Components</li>
-                         <li>Push Notifications</li>
-                         <li>Offline Capabilities</li>
-                         <li>Location Services</li>
-                     </ul>
-                 </div>
-                 <div class="tech-category">
-                     <h3>Integrations</h3>
-                     <ul>
-                         <li>Stripe Payment Processing</li>
-                         <li>Twilio SMS Verification</li>
-                         <li>Mapbox Geolocation</li>
-                         <li>Email Notifications</li>
-                         <li>Cloud Storage</li>
-                         <li>Analytics</li>
-                     </ul>
-                 </div>
-             </div>
-         </div>
-     </section>
- 
-     <section id="pricing" class="pricing">
-     <div class="container">
-         <h2>Investment Breakdown</h2>
-         <p class="pricing-intro">Our transparent pricing model breaks down the investment required for each component of your carpooling platform.</p>
-         
-         <div class="pricing-table-container">
-             <table class="pricing-table">
-                 <thead>
-                     <tr>
-                         <th>Component</th>
-                         <th>Description</th>
-                         <th>Cost (FRW)</th>
-                     </tr>
-                 </thead>
-                 <tbody>
-                     <tr>
-                         <td><strong>Backend Development</strong></td>
-                         <td>API, database, authentication, server logic</td>
-                         <td class="price-cell">FRW 1,400,000</td>
-                     </tr>
-                     <tr>
-                         <td><strong>Web Application</strong></td>
-                         <td>Responsive web platform for all devices</td>
-                         <td class="price-cell">FRW 1,200,000</td>
-                     </tr>
-                     <tr>
-                         <td><strong>iOS Application</strong></td>
-                         <td>Native iOS app with App Store deployment</td>
-                         <td class="price-cell">FRW 1,000,000</td>
-                     </tr>
-                     <tr>
-                         <td><strong>Android Application</strong></td>
-                         <td>Native Android app with Play Store deployment</td>
-                         <td class="price-cell">FRW 1,000,000</td>
-                     </tr>
-                     <tr>
-                         <td><strong>Admin Dashboard</strong></td>
-                         <td>Management interface with analytics</td>
-                         <td class="price-cell">FRW 800,000</td>
-                     </tr>
-                     <tr>
-                         <td><strong>Real-time Features</strong></td>
-                         <td>Chat, notifications, location tracking</td>
-                         <td class="price-cell">FRW 600,000</td>
-                     </tr>
-                     <tr>
-                         <td><strong>Payment Integration</strong></td>
-                         <td>Stripe setup, payment flows, reporting</td>
-                         <td class="price-cell">FRW 400,000</td>
-                     </tr>
-                     <tr>
-                         <td><strong>Testing & QA</strong></td>
-                         <td>Comprehensive testing across all platforms</td>
-                         <td class="price-cell">FRW 300,000</td>
-                     </tr>
-                     <tr>
-                         <td><strong>DevOps & Deployment</strong></td>
-                         <td>CI/CD, cloud infrastructure setup</td>
-                         <td class="price-cell">FRW 200,000</td>
-                     </tr>
-                     <tr>
-                         <td><strong>Documentation & Training</strong></td>
-                         <td>Technical docs, user guides, admin training</td>
-                         <td class="price-cell">FRW 100,000</td>
-                     </tr>
-                 </tbody>
-                 <tfoot>
-                     <tr class="subtotal-row">
-                         <td colspan="2"><strong>Subtotal</strong></td>
-                         <td class="price-cell">FRW 7,000,000</td>
-                     </tr>
-                     <tr class="tax-row">
-                         <td colspan="2"><strong>Tax (NOT NOW)</strong></td>
-                         <td class="price-cell">FRW 0</td>
-                     </tr>
-                     <tr class="total-row">
-                         <td colspan="2"><strong>TOTAL INVESTMENT</strong></td>
-                         <td class="price-cell">FRW 7,000,000</td>
-                     </tr>
-                 </tfoot>
-             </table>
-         </div>
- 
-         <div class="payment-summary">
-             <h3>Payment Schedule</h3>
-             <div class="payment-phases">
-                 <div class="payment-phase">
-                     <div class="phase-header">
-                         <span class="phase-number">1</span>
-                         <h4>Project Initiation</h4>
-                     </div>
-                     <div class="phase-amount">FRW 2,100,000</div>
-                     <div class="phase-percent">30%</div>
-                     <p>Due upon contract signing</p>
-                 </div>
-                 <div class="payment-phase">
-                     <div class="phase-header">
-                         <span class="phase-number">2</span>
-                         <h4>Development Milestones</h4>
-                     </div>
-                     <div class="phase-amount">FRW 3,500,000</div>
-                     <div class="phase-percent">50%</div>
-                     <p>Split across 4 key deliverables</p>
-                 </div>
-                 <div class="payment-phase">
-                     <div class="phase-header">
-                         <span class="phase-number">3</span>
-                         <h4>Project Completion</h4>
-                     </div>
-                     <div class="phase-amount">FRW 1,400,000</div>
-                     <div class="phase-percent">20%</div>
-                     <p>Due upon final approval</p>
-                 </div>
-             </div>
-         </div>
-     </div>
- </section>
- 
-     <section id="timeline" class="timeline">
-         <div class="container">
-             <h2>Project Timeline</h2>
-             <div class="timeline-container">
-                 <div class="timeline-item">
-                     <div class="timeline-marker"></div>
-                     <div class="timeline-content">
-                         <h3>Month 1</h3>
-                         <h4>Planning & Design</h4>
-                         <p>Requirements analysis, UI/UX design, architecture planning</p>
-                     </div>
-                 </div>
-                 <div class="timeline-item">
-                     <div class="timeline-marker"></div>
-                     <div class="timeline-content">
-                         <h3>Month 2</h3>
-                         <h4>Backend Development</h4>
-                         <p>API development, database setup, authentication, core functionality</p>
-                     </div>
-                 </div>
-                 <div class="timeline-item">
-                     <div class="timeline-marker"></div>
-                     <div class="timeline-content">
-                         <h3>Month 2-4</h3>
-                         <h4>Frontend & Mobile Development</h4>
-                         <p>Web application, iOS and Android app development in parallel</p>
-                     </div>
-                 </div>
-                 <div class="timeline-item">
-                     <div class="timeline-marker"></div>
-                     <div class="timeline-content">
-                         <h3>Month 5</h3>
-                         <h4>Integration & Testing</h4>
-                         <p>System integration, QA testing, performance optimization</p>
-                     </div>
-                 </div>
-                 <div class="timeline-item">
-                     <div class="timeline-marker"></div>
-                     <div class="timeline-content">
-                         <h3>Month 6</h3>
-                         <h4>Deployment & Launch</h4>
-                         <p>Production deployment, app store submissions, launch preparation</p>
-                     </div>
-                 </div>
-                 <div class="timeline-item">
-                     <div class="timeline-marker"></div>
-                     <div class="timeline-content">
-                         <h3>Post-Launch</h3>
-                         <h4>Support & Maintenance</h4>
-                         <p>3 months of technical support, updates, and maintenance included</p>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </section>
- 
-     <section class="cta">
-         <div class="container">
-             <h2>Ready to Transform Carpooling in Canada?</h2>
-             <p>Our team is ready to bring your vision to life with cutting-edge technology and expert development.</p>
-             <a href="/cdn-cgi/l/email-protection#41242c2c382f2e2f2e7371707201262c20282d6f222e2c" class="btn">Contact Me Today</a>
-         </div>
-     </section>
- 
-     <footer>
-         <div class="container">
-             <div class="footer-content">
-                 <div class="footer-logo">
-                     <h2>RideShare<span>Connect</span></h2>
-                     <p>Building the future of transportation, one ride at a time.</p>
-                 </div>
-                 <div class="footer-links">
-                     <h3>Quick Links</h3>
-                     <ul>
-                         <li><a href="#overview">Overview</a></li>
-                         <li><a href="#technologies">Technologies</a></li>
-                         <li><a href="#pricing">Pricing</a></li>
-                         <li><a href="#timeline">Timeline</a></li>
-                     </ul>
-                 </div>
-                 <div class="footer-contact">
-                     <h3>Contact Me</h3>
-                     <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b6d3dbdbcfd8d9d8d984868785f6d1dbd7dfda98d5d9db">[email&#160;protected]</a></p>
-                     <p>Phone: +250 788 240 148</p>
-                     <p>Kigali, Rwanda</p>
-                 </div>
-             </div>
-             <div class="footer-bottom">
-                 <p>&copy; 2025 RideShareConnect. All rights reserved.</p>
-             </div>
-         </div>
-     </footer>
- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
- </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpooling Platform Proposal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for the payment phases section */
+        .payment-phases {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+        .phase-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .phases-container {
+            display: grid;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .phase-block {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .phase-block:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .phase-header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 20px;
+            position: relative;
+        }
+        .phase-header h3 {
+            margin: 0 0 10px;
+            font-weight: 600;
+            font-size: 22px;
+        }
+        .phase-amount {
+            font-size: 20px;
+            font-weight: 700;
+            margin-right: 15px;
+        }
+        .phase-percent {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .phase-content {
+            padding: 25px;
+        }
+        .phase-milestone {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .phase-milestone:last-of-type {
+            border-bottom: none;
+        }
+        .phase-milestone h4 {
+            color: #2c3e50;
+            margin: 0 0 10px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        .phase-milestone h4:before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #3498db;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .milestone-duration {
+            display: inline-block;
+            background: #f0f7ff;
+            color: #3498db;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .payment-terms {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .payment-terms h5 {
+            margin: 0 0 10px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        .payment-terms p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .payment-summary {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 30px;
+        }
+        .payment-summary h3 {
+            text-align: center;
+            margin: 0 0 25px;
+            color: #2c3e50;
+            font-weight: 600;
+            position: relative;
+        }
+        .payment-summary h3:after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: #3498db;
+            margin: 15px auto 0;
+        }
+        .payment-summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .summary-item {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .summary-item:hover {
+            transform: scale(1.02);
+            border-color: #3498db;
+        }
+        .summary-header {
+            margin-bottom: 15px;
+        }
+        .summary-header h4 {
+            margin: 0 0 10px;
+            color: #2c3e50;
+        }
+        .summary-amount {
+            font-size: 24px;
+            font-weight: 700;
+            color: #3498db;
+        }
+        .early-completion {
+            background: #e3f7ed;
+            border-left: 4px solid #2ecc71;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 0 8px 8px 0;
+        }
+        .early-completion h4 {
+            margin: 0 0 10px;
+            color: #27ae60;
+            font-weight: 600;
+        }
+        .early-completion p {
+            margin: 5px 0;
+        }
+
+        /* Make phases responsive using grid */
+        @media (min-width: 768px) {
+            .phases-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 767px) {
+            .phases-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>RideShare<span>Connect</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#technologies">Technologies</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#payment-phases">Payment Phases</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Carpooling Platform Proposal</h1>
+                <p>A comprehensive solution for connecting drivers and passengers across Canada</p>
+                <a href="#pricing" class="btn">View Pricing</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview" class="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="icon">📱</div>
+                    <h3>Mobile Apps</h3>
+                    <p>Native iOS and Android applications with real-time ride tracking and notifications</p>
+                </div>
+                <div class="overview-card">
+                    <div class="icon">🖥️</div>
+                    <h3>Web Platform</h3>
+                    <p>Responsive web application with full functionality for both drivers and passengers</p>
+                </div>
+                <div class="overview-card">
+                    <div class="icon">🔐</div>
+                    <h3>Admin Dashboard</h3>
+                    <p>Comprehensive management interface with analytics and user management</p>
+                </div>
+                <div class="overview-card">
+                    <div class="icon">💬</div>
+                    <h3>Real-time Chat</h3>
+                    <p>Instant messaging between drivers and passengers with notifications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technologies" class="technologies">
+        <div class="container">
+            <h2>Technology Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js with Express</li>
+                        <li>TypeScript</li>
+                        <li>PostgreSQL Database</li>
+                        <li>Redis for Caching</li>
+                        <li>Socket.io for Real-time</li>
+                        <li>JWT Authentication</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Frontend (Web)</h3>
+                    <ul>
+                        <li>React with Vite</li>
+                        <li>TypeScript</li>
+                        <li>Modern CSS</li>
+                        <li>Responsive Design</li>
+                        <li>Mapbox Integration</li>
+                        <li>i18n (English/French)</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Mobile</h3>
+                    <ul>
+                        <li>React Native</li>
+                        <li>Native iOS Components</li>
+                        <li>Native Android Components</li>
+                        <li>Push Notifications</li>
+                        <li>Offline Capabilities</li>
+                        <li>Location Services</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Integrations</h3>
+                    <ul>
+                        <li>Stripe Payment Processing</li>
+                        <li>Twilio SMS Verification</li>
+                        <li>Mapbox Geolocation</li>
+                        <li>Email Notifications</li>
+                        <li>Cloud Storage</li>
+                        <li>Analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+    <div class="container">
+        <h2>Investment Breakdown</h2>
+        <p class="pricing-intro">Our transparent pricing model breaks down the investment required for each component of your carpooling platform.</p>
+        
+        <div class="pricing-table-container">
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Description</th>
+                        <th>Cost (FRW)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Backend Development</strong></td>
+                        <td>API, database, authentication, server logic</td>
+                        <td class="price-cell">FRW 1,200,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Web Application</strong></td>
+                        <td>Responsive web platform for all devices</td>
+                        <td class="price-cell">FRW 1,000,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>iOS Application</strong></td>
+                        <td>Native iOS app with App Store deployment</td>
+                        <td class="price-cell">FRW 900,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Android Application</strong></td>
+                        <td>Native Android app with Play Store deployment</td>
+                        <td class="price-cell">FRW 900,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Admin Dashboard</strong></td>
+                        <td>Management interface with analytics</td>
+                        <td class="price-cell">FRW 700,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Real-time Features</strong></td>
+                        <td>Chat, notifications, location tracking</td>
+                        <td class="price-cell">FRW 500,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Payment Integration</strong></td>
+                        <td>Stripe setup, payment flows, reporting</td>
+                        <td class="price-cell">FRW 350,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Testing & QA</strong></td>
+                        <td>Comprehensive testing across all platforms</td>
+                        <td class="price-cell">FRW 250,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DevOps & Deployment</strong></td>
+                        <td>CI/CD, cloud infrastructure setup</td>
+                        <td class="price-cell">FRW 150,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Documentation & Training</strong></td>
+                        <td>Technical docs, user guides, admin training</td>
+                        <td class="price-cell">FRW 50,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="subtotal-row">
+                        <td colspan="2"><strong>Subtotal</strong></td>
+                        <td class="price-cell">FRW 6,000,000</td>
+                    </tr>
+                    <tr class="tax-row">
+                        <td colspan="2"><strong>Tax (NOT NOW)</strong></td>
+                        <td class="price-cell">FRW 0</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td colspan="2"><strong>TOTAL INVESTMENT</strong></td>
+                        <td class="price-cell">FRW 6,000,000</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</section>
+
+    <section id="payment-phases" class="payment-phases">
+        <div class="container">
+            <h2>Payment Structure & Development Phases</h2>
+            <p class="phase-intro">Our project is organized into clear development phases with a transparent payment schedule aligned with key milestones. We believe in delivering value at each stage of the process, enabling you to see tangible results as the project progresses.</p>
+            
+            <div class="phases-container">
+                <div class="phase-block">
+                    <div class="phase-header">
+                        <h3>Phase 1: Foundation</h3>
+                        <div class="phase-amount">FRW 3,000,000</div>
+                        <div class="phase-percent">50%</div>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-milestone">
+                            <h4>Planning & Design</h4>
+                            <p>Requirements analysis, UI/UX design, architecture planning, data modeling, and system architecture design</p>
+                            <div class="milestone-duration">1 month</div>
+                        </div>
+                        <div class="phase-milestone">
+                            <h4>Backend Development</h4>
+                            <p>API development, database setup, authentication, core functionality, security implementation, and testing</p>
+                            <div class="milestone-duration">2 months</div>
+                        </div>
+                        <div class="payment-terms">
+                            <h5>Payment Terms</h5>
+                            <p>50% payment due upon successful completion of backend development</p>
+                            <p>Covers all foundation work including requirements, design, and backend systems</p>
+                            <p>Key deliverables: Database schema, API documentation, Backend codebase</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="phase-block">
+                    <div class="phase-header">
+                        <h3>Phase 2: Product Development</h3>
+                        <div class="phase-amount">FRW 2,000,000</div>
+                        <div class="phase-percent">33.3%</div>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-milestone">
+                            <h4>Frontend & Mobile Development</h4>
+                            <p>Web application, iOS and Android app development in parallel with responsive design and cross-platform testing</p>
+                            <div class="milestone-duration">1.5 months</div>
+                        </div>
+                        <div class="phase-milestone">
+                            <h4>Integration & Testing</h4>
+                            <p>System integration, QA testing, performance optimization, user acceptance testing, and bug fixing</p>
+                            <div class="milestone-duration">0.5 months</div>
+                        </div>
+                        <div class="payment-terms">
+                            <h5>Payment Terms</h5>
+                            <p>33.3% payment due upon completion of integration and testing</p>
+                            <p>Covers all product development work including frontend, mobile apps, and testing</p>
+                            <p>Key deliverables: Functional web app, iOS & Android applications, Test reports</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="phase-block">
+                    <div class="phase-header">
+                        <h3>Phase 3: Launch & Support</h3>
+                        <div class="phase-amount">FRW 1,000,000</div>
+                        <div class="phase-percent">16.7%</div>
+                    </div>
+                    <div class="phase-content">
+                        <div class="phase-milestone">
+                            <h4>Deployment & Launch</h4>
+                            <p>Production deployment, app store submissions, launch preparation, final configurations, and security audits</p>
+                            <div class="milestone-duration">1 month</div>
+                        </div>
+                        <div class="phase-milestone">
+                            <h4>Support & Maintenance</h4>
+                            <p>Technical support, updates, maintenance, performance monitoring, and security patches</p>
+                            <div class="milestone-duration">6 months (included free)</div>
+                        </div>
+                        <div class="payment-terms">
+                            <h5>Payment Terms</h5>
+                            <p>Final 16.7% payment due upon successful deployment and launch</p>
+                            <p>6 months of technical support and maintenance included at no additional cost</p>
+                            <p>Key deliverables: Live application, Admin dashboard, Documentation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payment-summary">
+                <h3>Payment Schedule Summary</h3>
+                <div class="payment-summary-grid">
+                    <div class="summary-item">
+                        <div class="summary-header">
+                            <h4>Initial Payment</h4>
+                            <div class="summary-amount">FRW 3,000,000</div>
+                        </div>
+                        <p>Due upon completion of Phase 1</p>
+                        <p><strong>Milestone:</strong> Backend Development</p>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-header">
+                            <h4>Interim Payment</h4>
+                            <div class="summary-amount">FRW 2,000,000</div>
+                        </div>
+                        <p>Due upon completion of Phase 2</p>
+                        <p><strong>Milestone:</strong> Integration & Testing</p>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-header">
+                            <h4>Final Payment</h4>
+                            <div class="summary-amount">FRW 1,000,000</div>
+                        </div>
+                        <p>Due upon completion of Launch</p>
+                        <p><strong>Milestone:</strong> Deployment & Launch</p>
+                    </div>
+                </div>
+                
+                <div class="early-completion">
+                    <h4>Early Completion Benefit</h4>
+                    <p>If any phase is completed ahead of schedule, the corresponding payment will be due upon completion of that phase, regardless of the originally estimated timeframe. This allows us to maintain project momentum and potentially deliver the entire solution earlier than projected.</p>
+                    <p>Early completion of a phase triggers the start of the next phase immediately, potentially reducing the overall project timeline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <h2>Project Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Month 1</h3>
+                        <h4>Planning & Design</h4>
+                        <p>Requirements analysis, UI/UX design, architecture planning</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Month 2-3</h3>
+                        <h4>Backend Development</h4>
+                        <p>API development, database setup, authentication, core functionality</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Month 4-5</h3>
+                        <h4>Frontend & Mobile Development</h4>
+                        <p>Web application, iOS and Android app development in parallel</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Month 5</h3>
+                        <h4>Integration & Testing</h4>
+                        <p>System integration, QA testing, performance optimization</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Month 6</h3>
+                        <h4>Deployment & Launch</h4>
+                        <p>Production deployment, app store submissions, launch preparation</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Month 6-12</h3>
+                        <h4>Support & Maintenance</h4>
+                        <p>6 months of technical support, updates, and maintenance included</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Carpooling in Canada?</h2>
+            <p>Our team is ready to bring your vision to life with cutting-edge technology and expert development.</p>
+            <a href="/cdn-cgi/l/email-protection#41242c2c382f2e2f2e7371707201262c20282d6f222e2c" class="btn">Contact Me Today</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>RideShare<span>Connect</span></h2>
+                    <p>Building the future of transportation, one ride at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#technologies">Technologies</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#payment-phases">Payment Phases</a></li>
+                        <li><a href="#timeline">Timeline</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Me</h3>
+                    <p>Email: <a href="emmynono2013@gmail.com" class="__cf_email__" data-cfemail="b6d3dbdbcfd8d9d8d984868785f6d1dbd7dfda98d5d9db">emmynono2013@gmail.com</a></p>
+                    <p>Phone: +250 788 240 148</p>
+                    <p>Kigali, Rwanda</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RideShareConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
